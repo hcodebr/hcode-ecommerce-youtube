@@ -83,6 +83,10 @@ class PaymentTypeController extends Controller
             'name' => 'required'
         ]);
 
+        $paymentType->name = $request->input('name');
+
+        $paymentType->save();
+
         return $paymentType;
     }
 
