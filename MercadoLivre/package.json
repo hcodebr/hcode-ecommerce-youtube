@@ -1,0 +1,14 @@
+{
+  "name": "mercadolivre",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {},
+  "keywords": [
+    "hcode-cafe"
+  ],
+  "author": "Hcode",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.26.10"
+  }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Livre</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+</head>
+<body>
+
+    <div id="overlay"></div>
+
+    <header>
+        
+        <div class="container">
+            <div>
+                <button type="button" id="menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0,0H24V24H0Z" fill="none"/><path d="M3,18H21V16H3Zm0-5H21V11H3ZM3,6V8H21V6Z" fill="#333"/></svg>
+                </button>
+                <a href="index.html" id="logo"><img src="assets/images/mercado-livre.svg" alt="Logo Mercado Livre" /></a>
+                <form action="/search">
+                    <input type="search" name="search" placeholder="Buscar produtos, marcas e muito mais..." />
+                    <img src="assets/images/search-icon.svg" alt="Icon Search" />
+                </form>
+                <div class="ml-cars">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0,0H24V24H0Z" fill="none"/><path d="M18.92,6.01A1.494,1.494,0,0,0,17.5,5H6.5A1.5,1.5,0,0,0,5.08,6.01L3,12v8a1,1,0,0,0,1,1H5a1,1,0,0,0,1-1V19H18v1a1,1,0,0,0,1,1h1a1,1,0,0,0,1-1V12ZM6.85,7H17.14l1.08,3.11H5.77ZM19,17H5V12H19Z" fill="#333"/><circle cx="1.5" cy="1.5" r="1.5" transform="translate(6 13)" fill="#333"/><circle cx="1.5" cy="1.5" r="1.5" transform="translate(15 13)" fill="#333"/></svg>
+                    <span>Seu próximo carro está aqui</span>
+                </div>
+            </div>
+            <nav>
+                <button class="zipcode">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"><path d="M0,0H28V28H0Z" fill="none"/><path d="M13.3,2A8.248,8.248,0,0,0,5,10.2c0,6.153,8.3,15.237,8.3,15.237s8.3-9.084,8.3-15.237A8.248,8.248,0,0,0,13.3,2ZM6.389,10.2c0-3.235,3.639-6.851,6.913-6.851S20.171,6.97,20.171,10.2c0,3.376-4.355,9.805-6.869,12.958C10.835,20.033,6.389,13.545,6.389,10.2Z" transform="translate(0.698 0.279)"/><circle cx="2.849" cy="2.849" r="2.849" transform="translate(11.151 7.63)" fill="none" stroke="#000" stroke-width="1"/></svg>
+                        <div>
+                            <span>Informe seu</span>
+                            <span>CEP</span>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" fill="#33333399"/></svg>
+                </button>
+                <div id="menu-mobile">
+                    <ul>
+                        <li><a href="#">Categorias</a></li>
+                        <li><a href="#">Ofertas do dia</a></li>
+                        <li><a href="#">Histórico</a></li>
+                        <li><a href="#">Supermercado</a></li>
+                        <li><a href="#">Lojas oficiais</a></li>
+                        <li><a href="#">Vender</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Crie a sua conta</a></li>
+                        <li><a href="#">Entre</a></li>
+                        <li><a href="#">Compras</a></li>
+                        <li><a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path d="M0,0H20V20H0Z" fill="none"/><path d="M12.641,10.8a1.593,1.593,0,0,0,1.4-.824l2.864-5.192a.8.8,0,0,0-.7-1.184H4.368L3.616,2H1V3.6H2.6L5.48,9.672,4.4,11.624A1.6,1.6,0,0,0,5.8,14h9.6V12.4H5.8l.88-1.6ZM5.128,5.2h9.721l-2.208,4H7.025ZM5.8,14.8a1.6,1.6,0,1,0,1.6,1.6A1.6,1.6,0,0,0,5.8,14.8Zm8,0a1.6,1.6,0,1,0,1.6,1.6A1.6,1.6,0,0,0,13.8,14.8Z" fill="#333"/></svg>
+                        </a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+:root {
+  --topBar: 50px;
+  --yellow: #FFF159;
+  --bg: #EBEBEB;
+  --black: #000;
+  --gray3: #333;
+  --grayC: #CCC;
+  --grayEA: #EAEAEA;
+  --black2: rgba(0, 0, 0, .2);
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--bg);
+  margin: 0;
+}
+
+#overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--black2);
+  filter: blur(5px);
+  position: fixed;
+  left: 0;
+  top: var(--topBar);
+  z-index: 1;
+  display: none;
+}
+
+header, section, div, button, ul, li, nav {
+  display: flex;
+}
+
+header {
+  background: linear-gradient(var(--yellow) 50%, transparent);
+  justify-content: center;
+  padding: 5px 0;
+  padding-bottom: 136px;
+}
+header #menu {
+  background: none;
+  border: none;
+  outline: none;
+  margin: 5px 10px;
+  cursor: pointer;
+}
+header #logo {
+  position: fixed;
+  left: 0;
+  top: 50px;
+  z-index: 3;
+  width: 300px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: var(--grayEA) 1px solid;
+  display: none;
+}
+header .container {
+  flex-direction: column;
+}
+header .container form {
+  position: relative;
+}
+header .container form input {
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 1px 2px var(--black2);
+  font-size: 15px;
+  width: 266px;
+  height: 36px;
+  padding-left: 32px;
+}
+header .container form input:placeholder {
+  color: var(--grayC);
+}
+header .container form img {
+  position: absolute;
+  left: 9px;
+  top: 10px;
+}
+header .container .ml-cars {
+  align-items: center;
+  display: none;
+}
+header .container nav {
+  border-top: var(--black2);
+}
+header .container nav .zipcode {
+  align-items: center;
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+header .container nav .zipcode > div {
+  align-items: center;
+}
+header .container nav .zipcode > div > :last-child {
+  margin-left: 4px;
+}
+header .container nav #menu-mobile {
+  position: fixed;
+  top: var(--topBar);
+  left: 0;
+  background-color: var(--white);
+  width: 300px;
+  height: calc(100vh - var(--topBar));
+  z-index: 2;
+  flex-direction: column;
+  padding-top: 100px;
+  transform: translateX(-300px);
+  transition: 1s;
+}
+header .container nav #menu-mobile ul {
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+}
+header .container nav #menu-mobile ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header .container nav #menu-mobile ul li a {
+  padding: 15px;
+  text-decoration: none;
+  color: var(--gray3);
+}
+header .container nav #menu-mobile ul:last-child li:last-child {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+header .container nav #menu-mobile ul:last-child li:last-child a {
+  padding: 15px;
+}
+
+.menu-opened #overlay, .menu-opened #logo {
+  display: flex;
+}
+.menu-opened #menu-mobile {
+  transform: translateX(0) !important;
+}
+
+.container {
+  width: 100%;
+}
+
+@media (min-width: 1190px) {
+  header {
+    padding: 8px 0;
+  }
+  header #menu {
+    display: none;
+  }
+  header #logo {
+    display: flex;
+  }
+
+  .container {
+    width: 1190px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
