@@ -2,7 +2,9 @@
   "name": "mercadolivre",
   "version": "1.0.0",
   "description": "",
-  "scripts": {},
+  "scripts": {
+    "sass": "sass --watch src/assets/sass:src/assets/css"
+  },
   "keywords": [
     "hcode-cafe"
   ],
