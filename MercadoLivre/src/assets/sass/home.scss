@@ -1,0 +1,34 @@
+main {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    .categories {
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        a {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            width: 58px;
+            div {
+                width: 58px;
+                height: 58px;
+                background-color: var(--white);
+                box-shadow: -1px 1px 4px var(--black1);
+                padding: 5px;
+                border-radius: 50%;
+                justify-content: center;
+                align-items: center;
+            }
+            span {
+                font-size: 10px;
+                color: var(--gray8F);
+                text-align: center;
+                padding: 7px 0;
+            }
+        }
+    }
+}

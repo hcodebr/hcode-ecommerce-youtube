@@ -1,0 +1,12 @@
+#banner {
+  justify-content: center;
+  width: 100%;
+  transform: translateY(-130px);
+  margin-bottom: -110px;
+}
+#banner img {
+  width: 344px;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=banner.css.map */

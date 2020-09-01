@@ -1,0 +1,29 @@
+.card {
+  background-color: var(--white);
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px var(--black1);
+  width: 100%;
+  flex-direction: column;
+}
+.card .card-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--grayEA);
+  font-size: 18px;
+  color: var(--gray3);
+  margin: 0;
+}
+.card .card-body {
+  padding: 0 20px;
+  flex-direction: column;
+}
+.card .card-footer {
+  padding: 15px 20px;
+  border-top: 1px solid var(--grayEA);
+  color: var(--blue);
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  align-items: center;
+}
+
+/*# sourceMappingURL=card.css.map */

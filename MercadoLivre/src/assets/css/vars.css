@@ -6,8 +6,12 @@
   --gray3: #333;
   --grayC: #CCC;
   --grayEA: #EAEAEA;
+  --gray8F: #8F8F8F;
   --black2: rgba(0, 0, 0, .2);
+  --black1: rgba(0, 0, 0, .1);
   --white: #fff;
+  --blue: #3483FA;
+  --green: #39B54A;
 }
 
 /*# sourceMappingURL=vars.css.map */
